@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">TestNgSessions suite</th></tr>
+<tr><td><a href="#t0">AmazonTest</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">8,692</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">AmazonTestWithBM</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">16,946</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num">0</th><th class="num attn">4</th><th class="num">25,638</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">TestNgSessions suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">AmazonTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">TestNgSessions.AmazonTest</td><td><a href="#m0">isHelpExistTest</a></td><td rowspan="1">1690445976115</td><td rowspan="1">2137</td></tr><tr class="failedeven"><td><a href="#m1">searchExistTest</a></td><td rowspan="1">1690445978261</td><td rowspan="1">17</td></tr><tr class="failedeven"><td><a href="#m2">titleTest</a></td><td rowspan="1">1690445978285</td><td rowspan="1">18</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">AmazonTestWithBM &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">TestNgSessions.AmazonTestWithBM</td><td><a href="#m3">titleTest</a></td><td rowspan="1">1690445976539</td><td rowspan="1">66</td></tr><tr><th colspan="4">AmazonTestWithBM &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">TestNgSessions.AmazonTestWithBM</td><td><a href="#m4">isHelpExistTest</a></td><td rowspan="1">1690445985896</td><td rowspan="1">626</td></tr><tr class="passedeven"><td><a href="#m5">searchExistTest</a></td><td rowspan="1">1690445981769</td><td rowspan="1">86</td></tr></tbody>
+</table>
+<h2>AmazonTest</h2><h3 id="m0">TestNgSessions.AmazonTest#isHelpExistTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: disconnected: Unable to receive message from renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=114.0.5735.248)
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cfc0e1be478014cc305c8894123f2fde, findElement {using=link text, value=Help}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52314}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52314/devtoo..., se:cdpVersion: 114.0.5735.248, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cfc0e1be478014cc305c8894123f2fde
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at TestNgSessions.AmazonTest.isHelpExistTest(AmazonTest.java:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">TestNgSessions.AmazonTest#searchExistTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=114.0.5735.248)
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cfc0e1be478014cc305c8894123f2fde, findElement {using=id, value=twotabsearchtextbox}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52314}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52314/devtoo..., se:cdpVersion: 114.0.5735.248, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cfc0e1be478014cc305c8894123f2fde
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at TestNgSessions.AmazonTest.searchExistTest(AmazonTest.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">TestNgSessions.AmazonTest#titleTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=114.0.5735.248)
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cfc0e1be478014cc305c8894123f2fde, getTitle {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52314}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52314/devtoo..., se:cdpVersion: 114.0.5735.248, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cfc0e1be478014cc305c8894123f2fde
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:590)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:594)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:300)
+	at TestNgSessions.AmazonTest.titleTest(AmazonTest.java:26)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>AmazonTestWithBM</h2><h3 id="m3">TestNgSessions.AmazonTestWithBM#titleTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Amazon.com. Spend less. smile more.] but found [Amazon.com. Spend less. Smile more.]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at TestNgSessions.AmazonTestWithBM.titleTest(AmazonTestWithBM.java:30)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">TestNgSessions.AmazonTestWithBM#isHelpExistTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">TestNgSessions.AmazonTestWithBM#searchExistTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNgSessions suite" verbose="4" thread-count="3" parallel="tests">
+  <test name="AmazonTest">
+  <parameter name="url" value="https://www.google.com"/>
+  <parameter name="browser" value="chrome"/>
+      <classes>
+      <class name="TestNgSessions.AmazonTest"/>
+      </classes>
+  </test> <!-- Test --> 
+   
+  <test name="AmazonTestWithBM">    
+    <parameter name="url" value="https://www.amazon.com"/>
+     <parameter name="browser" value="safari"/>
+    <classes>
+       <class name="TestNgSessions.AmazonTestWithBM"/>
+    </classes>
+     
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

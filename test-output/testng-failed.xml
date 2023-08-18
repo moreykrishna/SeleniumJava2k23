@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [TestNgSessions suite]" guice-stage="DEVELOPMENT" verbose="4">
+  <test thread-count="3" parallel="tests" name="AmazonTest(failed)" verbose="4">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://www.google.com"/>
+    <classes>
+      <class name="TestNgSessions.AmazonTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="titleTest"/>
+          <include name="searchExistTest"/>
+          <include name="isHelpExistTest"/>
+        </methods>
+      </class> <!-- TestNgSessions.AmazonTest -->
+    </classes>
+  </test> <!-- AmazonTest(failed) -->
+  <test thread-count="3" parallel="tests" name="AmazonTestWithBM(failed)" verbose="4">
+    <parameter name="browser" value="safari"/>
+    <parameter name="url" value="https://www.amazon.com"/>
+    <classes>
+      <class name="TestNgSessions.AmazonTestWithBM">
+        <methods>
+          <include name="tearDown"/>
+          <include name="titleTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- TestNgSessions.AmazonTestWithBM -->
+    </classes>
+  </test> <!-- AmazonTestWithBM(failed) -->
+</suite> <!-- Failed suite [TestNgSessions suite] -->
